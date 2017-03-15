@@ -1,5 +1,5 @@
 //must create a module for the battleship
-var battleship = function() {
+var BATTLESHIP_MODULE = function(row, col) {
   var board = [
     ['o', ' ', 'o', 'o', ' '],
     ['o', ' ', ' ', ' ', ' '],
@@ -17,8 +17,7 @@ var battleship = function() {
       return 'Miss';
     }
   }
-
-  return fire;
+  return fire(row, col);
 
 }();
 
